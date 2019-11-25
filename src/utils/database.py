@@ -2,7 +2,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-bd = os.getenv('BD', 'testing')
+bd = os.getenv('BD', 'local')
 
 if bd == 'testing':
     DATABASES = {
